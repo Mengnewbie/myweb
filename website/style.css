@@ -1,0 +1,33 @@
+/* Create the animated background */
+body {
+  background: linear-gradient(45deg, #8A2BE2, #4B0082, #8A2BE2, #800080);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+  color: lightblue;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Remove square background and border */
+.icon-square {
+  background: none !important;  /* Remove any background color */
+  border: none !important;      /* Remove any border */
+  border-radius: 0 !important;  /* Remove any rounded corners */
+  box-shadow: none !important;  /* Remove any shadow */
+  padding: 0 !important;        /* Remove padding */
+  width: auto !important;       /* Allow width to fit the icon */
+  height: auto !important;      /* Allow height to fit the icon */
+  display: inline-flex !important; /* Ensure the icon displays inline without layout issues */
+}
+
+
